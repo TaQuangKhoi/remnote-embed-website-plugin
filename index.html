@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32"
-    href="https://www.remnote.com/favicon-32x32.png">
-    <title>RemNote Embed Website Plugin</title>
-</head>
-<body>
-    <p>Test 4</p>
-    <script src="./main.js"></script>
-    <iframe src="https://kinopio.club/" title="test ifram" width="100%" height="600px">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iFrame RemNote</title>
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
 
-    </iframe>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- Import the RemNote JavaScript API proxy -->
+    <script src="https://cdn.jsdelivr.net/gh/remnoteio/remnote-api@latest/RemNoteAPI.js">
+    </script>
+  </head>
+  <body>
+    <div id="inputURL">
+      <input id="inputValue" placeholder="Input URL" autocomplete="off" />
+    </div>
     
-</body>
+    <iframe id="web"
+      height="475px"
+      width="100%"
+      src=""
+      title="description"
+    ></iframe>
+
+  </body>
 </html>

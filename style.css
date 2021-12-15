@@ -1,0 +1,73 @@
+body {
+    font-family: "Cascadia Code";
+    background-color: var(--color-bg);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Very light scaling for our illustration */
+  .title {
+    color: #2800FF;
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: 0;
+  }
+  
+  /* Instructions */
+  .instructions {
+    margin: 1rem auto 0;
+  }
+  
+  /* Button - Add it from the README instructions */
+  input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: 500ms;
+    position: relative;
+  }
+  #inputURL {
+    
+  }
+  
+  /* Custom Scrollbar */
+      /* width */
+      ::-webkit-scrollbar {
+          width: 10px!important;
+      }
+    
+      /* Track */
+      ::-webkit-scrollbar-track {
+          background: #c1d2f1!important;
+          border-radius: 10px;
+          /*box-shadow: inset 0 0 3px #eaebed;*/
+  }
+  
+    
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: #92B0FF!important;
+          border-radius: 10px;
+      }
+    
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          background: #82a4e3!important;
+          border-radius: 10px;
+      }
+  
+  /* Input URL Bar */
+  
