@@ -16,9 +16,9 @@ async function Main(){
   
   urlAsMarkdown = urlMD.nameAsMarkdown;
   console.log("Get Children.Text : ", urlMD.nameAsMarkdown);
-  let pattern = /http(.*)/gm;
+  let pattern = /http(.*)/gm; 
   var urlRemovedParentheses = urlAsMarkdown.replace(/[)]/g, "");
-  var urlText = urlRemovedParentheses.match(pattern);
+  var urlText = urlRemovedParentheses.match(pattern); // Filter all text from `http`
   console.log("Pure URL: ", urlText);
   
   document.getElementById("web").src = urlText;
